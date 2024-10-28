@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=0.2">
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Depth Anything V2">
+  <meta name="keywords" content="Monocular Depth Estimation">
+  <title>Depth Anything V2</title>
+
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+
+
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+  <link rel="icon" href="./static/images/Logo.png">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <script src="./static/js/script.js"></script>
+</head>
+<body>
+
+<nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+  <div class="navbar-menu">
+</nav>
+
+
+
+
+
+
+<section class="hero is-small" style="margin-top: 50px; padding-top: 0px;">
+  <h2 class="title is-4" style="text-align: center;">Comparison with Marigold and Geowizard</h2>
+  <div class="hero-body">
+    
+    <div class="container">
+      <div id="results-carousel" class="carousel results-carousel">
+        
+       
+
+        <div class="img-grid-2">
+          <div class="image-container">
+            <div class="caption">Raw Image</div>
+            <img src="./static/images/compare_sd/demo17_img.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Depth Anything V2</div>
+            <img src="./static/images/compare_sd/demo17_v2.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Marigold</div>
+            <img src="./static/images/compare_sd/demo17_marigold.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Geowizard</div>
+            <img src="./static/images/compare_sd/demo17_geowizard.jpg" width="100%">
+          </div>
+        </div>
+
+        <div class="img-grid-2">
+          <div class="image-container">
+            <div class="caption">Raw Image</div>
+            <img src="./static/images/compare_sd/demo18_img.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Depth Anything V2</div>
+            <img src="./static/images/compare_sd/demo18_v2.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Marigold</div>
+            <img src="./static/images/compare_sd/demo18_marigold.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Geowizard</div>
+            <img src="./static/images/compare_sd/demo18_geowizard.jpg" width="100%">
+          </div>
+        </div>
+
+        <div class="img-grid-2">
+          <div class="image-container">
+            <div class="caption">Raw Image</div>
+            <img src="./static/images/compare_sd/landscape_painting_img.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Depth Anything V2</div>
+            <img src="./static/images/compare_sd/landscape_painting_v2.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Marigold</div>
+            <img src="./static/images/compare_sd/landscape_painting_marigold.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Geowizard</div>
+            <img src="./static/images/compare_sd/landscape_painting_geowizard.jpg" width="100%">
+          </div>
+        </div>
+
+        <div class="img-grid-2">
+          <div class="image-container">
+            <div class="caption">Raw Image</div>
+            <img src="./static/images/compare_sd/51192348746_6c00af3293_k_img.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Depth Anything V2</div>
+            <img src="./static/images/compare_sd/51192348746_6c00af3293_k_v2.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Marigold</div>
+            <img src="./static/images/compare_sd/51192348746_6c00af3293_k_marigold.jpg" width="100%">
+          </div>
+
+          <div class="image-container">
+            <div class="caption">Geowizard</div>
+            <img src="./static/images/compare_sd/51192348746_6c00af3293_k_geowizard.jpg" width="100%">
+          </div>
+        </div>
+
+      </div>
+    </div>
+    
+  </div>
+</section>
+
+<section class="section"  style="margin-top: 0; padding-top: 50px;">
+  <h2 class="title is-4" style="text-align: center;">Depth Visualization on Videos</h2>
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-full-width">
+        <p>
+        <b>Note:</b> Depth Anything V2 is an image-based depth estimation method, we use videos just to better exhibit our superiority.
+        </p><br>
+
+        <video poster="" id="ade" autoplay muted loop playsinline height="10%">
+          <source src="./videos/traffic.mov"
+                  type="video/mp4">
+        </video>
+      </div>
+    </div>
+  </div>
+  <div class="video-grid">
+    <video poster="" id="ade" autoplay muted loop playsinline>
+        <source src="./videos/basketball.mov" type="video/mp4">
+    </video>
+    <video poster="" id="ade" autoplay muted loop playsinline>
+      <source src="./videos/boys.mov" type="video/mp4">
+  </video>
+  </div>
+</section>
+
+
+<!-- <section class="section" style="background-color:#efeff081"> -->
+<section class="section">
+  <div class="container is-max-desktop">
+    <!-- Abstract. -->
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            This work presents Depth Anything V2. Without pursuing fancy techniques, we aim to reveal crucial findings to pave the way towards building a powerful monocular depth estimation model. Notably, compared with V1, this version produces much finer and more robust depth predictions through three key practices: 1) replacing all labeled real images with synthetic images, 2) scaling up the capacity of our teacher model, and 3) teaching student models via the bridge of large-scale pseudo-labeled real images. Compared with the latest models built on Stable Diffusion, our models are significantly more efficient (more than 10x faster) and more accurate. We offer models of different scales (ranging from 25M to 1.3B params) to support extensive scenarios. Benefiting from their strong generalization capability, we fine-tune them with metric depth labels to obtain our metric depth models. In addition to our models, considering the limited diversity and frequent noise in current test sets, we construct a versatile evaluation benchmark with sparse depth annotations to facilitate future research.
+          </p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Framework</h2>
+        <div class="content has-text-justified">
+          <p>
+            We first train an initial largest teacher model (based on DINOv2-Giant) <b>purely on synthetic images</b>. Then, it produces high-quality pseudo labels for large-scale <b>unlabeled real images</b>. Finally, student models are trained <b>solely</b> on the pseudo-labeled real images.
+          </p>
+        </div>
+        <div class="image-area">
+          <img src="./static/images/pipeline.png" alt="pipeline" width="100%">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<section class="section">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered">
+    <div class="columns is-centered">
+      <div class="column is-four-fifths">
+        <h2 class="title is-4" style="text-align: center;">Data Coverage</h2>
+          <div class="content has-text-justified">
+            <p>
+              We use 595K synthetic images to train the initial largest teacher model and <b>62M+ real pseudo-labeled images</b> to train final student models.
+            </p>
+          </div>
+
+          <div class="image-area">
+            <img src="./static/images/dataset.png" alt="pipeline" width="55%" class="center">
+          </div>
+</section>
+
+
+<section class="section pt-0" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title is-4">Citation</h2>
+    <pre class="selectable"><code>@article{depth_anything_v2,
+  title={Depth Anything V2},
+  author={Yang, Lihe and Kang, Bingyi and Huang, Zilong and Zhao, Zhen and Xu, Xiaogang and Feng, Jiashi and Zhao, Hengshuang},
+  journal={arXiv:2406.09414},
+  year={2024}
+}</code></pre>
+  </div>
+</section>
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link"
+         href="https://arxiv.org/abs/2406.09414">
+        <i class="fas fa-file-pdf"></i>
+      </a>
+      <a class="icon-link" href="https://github.com/DepthAnything/Depth-Anything-V2" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="content">
+        <p>
+          The template is borrowed from <a href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>
+        </p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
