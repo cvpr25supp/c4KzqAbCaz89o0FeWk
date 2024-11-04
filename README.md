@@ -1,2 +1,2 @@
-# rave-video.github.io
+# supplementary material
 Initial commit
