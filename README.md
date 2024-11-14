@@ -1,2 +1,2 @@
-# supplementary material
+# Supplementary Material
 Initial commit
