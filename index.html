@@ -1,18 +1,30 @@
-<!DOCTYPE html>
+<!DOCTYPE html> 
 <html>
 <head>
   <meta charset="utf-8">
   <!-- Meta tags for social media banners, these should be filled in appropriatly as they are your "business card" -->
   <!-- Replace the content tag with appropriate information -->
+  <meta name="description" content="VideoDirector is a video editing method that utilizes T2V models directly, incorporating our proposed guidance and attention control modules.">
+  <meta property="og:title" content="VideoDirector: Precise Video Editing via Text-to-Video Models"/>
+  <meta property="og:description" content="VideoDirector is a video editing method that utilizes T2V models directly, incorporating our proposed guidance and attention control modules."/>
+  <meta property="og:url" content="https://VideoDirector.github.io/"/>
   <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X630-->
   <meta property="og:image" content="static/image/your_banner_image.png" />
   <meta property="og:image:width" content="1200"/>
   <meta property="og:image:height" content="630"/>
 
 
+  <meta name="twitter:title" content="VideoDirector: Precise Video Editing via Text-to-Video Models">
+  <meta name="twitter:description" content="VideoDirector is a video editing method that utilizes T2V models directly, incorporating our proposed guidance and attention control modules.">
+  <!-- Path to banner image, should be in the path listed below. Optimal dimenssions are 1200X600-->
+  <meta name="twitter:image" content="static/images/your_twitter_banner_image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <!-- Keywords for your paper to be indexed by-->
+  <meta name="keywords" content="Text to Video Editing, Video Diffusion models">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
 
-  <title> Test </title>
+  <title>VideoDirector: Precise Video Editing via Text-to-Video Models</title>
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
   rel="stylesheet">
 
@@ -47,13 +59,325 @@
 <body>
 
 
+  <section class="hero">
+    <div class="hero-body">
+      <div class="container is-max-desktop">
+        <div class="columns is-centered">
+          <div class="column has-text-centered">
+            <h1 class="xtitle is-1 publication-title" style="    font-size: 200%; font-weight: 800;">VideoDirector: Precise Video Editing via Text-to-Video Models</h1>
+            <div class="is-size-5 publication-authors">
+              <!-- Paper authors -->
+              <span class="author-block"><a href="https://scholar.google.co.uk/citations?user=_IKVeo4AAAAJ&hl=en" target="_blank">Yukun Wang</a><sup>1</sup></span>
+              <span class="author-block"><a href="https://scholar.google.co.uk/citations?user=gbBAujsAAAAJ&hl=en" target="_blank">Longguang Wang</a><sup>1</sup></span>
+              <span class="author-block"><a href="_blank" target="_blank">Zhiyuan Ma</a><sup>2</sup></span>
+              <span class="author-block"><a href="_blank" target="_blank">Qibin Hu</a><sup>1</sup></span>
+              <span class="author-block"><a href="https://kevinkaixu.net/" target="_blank">Kai Xu</a><sup>3</sup></span>
+              <span class="author-block"><a href="https://scholar.google.com/citations?user=WQRNvdsAAAAJ&hl=en" target="_blank">Yulan Guo</a><sup>1</sup></span>
+            </div>
+
+            <div class="is-size-5 publication-authors">
+              <span class="author-block"><sup>1</sup>Sun Yat-sen University</span>
+              <span class="author-block"><sup>2</sup>Tsinghua University</span>
+              <span class="author-block"><sup>3</sup>National University of Defense Technology</span>
+              <!--<span class="eql-cntrb"><small><br> <sup>*</sup>Corresponding author</small></span>-->
+              <!--<span class="author-block"></span><br><b>CVPR 2024 (Highlight)</b></span>-->
+              <!--<span class="eql-cntrb"><small><br> <sup>*</sup>Joint co-author</small></span>-->
+            </div>
+
+            <div class="column has-text-centered">
+              <div class="publication-links">
+                    <!-- Arxiv PDF link -->
+                <span class="link-block">
+                  <a href="https://arxiv.org/abs/2411.17592" target="_blank"
+                  class="external-link button is-normal is-rounded is-dark">
+                  <span class="icon">
+                    <i class="fas fa-file-pdf"></i>
+                  </span>
+                  <span>Arxiv</span>
+                </a>
+              </span>
+
+              <!-- Supplementary PDF link -->
+              <!--<span class="link-block">
+                <a href="supp/supp.html" target="_blank"
+                class="external-link button is-normal is-rounded is-dark">
+                <span class="icon">
+                  <i class="fas fa-file-pdf"></i>
+                </span>
+                <span>Supplementary</span>
+              </a>
+            </span>-->
+
+            <!-- Github link -->
+             <!-- Github link -->
+            <span class="link-block">
+              <a href="_blank" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+              <span class="icon">
+                <i class="fab fa-github"></i>
+              </span>
+              <span>Code (Coming soon)</span>
+            </a>
+          </span>
+
+          <!--<span class="link-block">
+            <a href="https://github.com/RehgLab/RAVE" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="fa fa-database"></i>
+            </span>
+            <span>Dataset (Coming soon)</span>
+          </a>
+        </span>-->
+
+          <!-- Huggingface link -->
+          <span class="link-block">
+            <a href="_blank" target="_blank"
+            class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <img src="static/images/hf-logo.svg" alt="Huggingface logo" width="20" height="20">
+            </span>
+            <span>Demo (Coming soon)</span>
+            </a>
+          </span>
+
+          <!-- ArXiv abstract Link -->
+          <!--<span class="link-block">
+            <a href="https://arxiv.org/abs/2312.04524" target="_blank"
+              class="external-link button is-normal is-rounded is-dark">
+            <span class="icon">
+              <i class="ai ai-arxiv"></i>
+            </span>
+            <span>arXiv</span>
+                </a>
+              </span>-->
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- Glider --> 
+<div class="container" style="margin-bottom: 3rem;" id="container">
+  <div class="teaser">
+    <div class="glide" id="teaser-glide">
+      <div data-glide-el="track" class="glide__track">
+        <ul class="glide__slides">
+          <li class="glide__slide">
+            <video muted loop autoplay defaultMuted playsinline webkit-playsinline class="teaser-video-0">
+              <source src="static/teaser/walk_man.mp4"  type="video/mp4"/>
+            </video>
+          </li>
+          <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-1">
+              <source src="static/teaser/wolf.mp4" type="video/mp4"/>
+            </video>
+          </li>
+          <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-2">
+              <source src="supp\final_video\1130flamingo.mp4" type="video/mp4"/>
+            </video>
+          </li>
+          <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-3">
+              <source src="static/teaser/car_turn.mp4" type="video/mp4"/>
+            </video>
+          </li>
+          <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-4">
+              <source src="static/teaser/woman_running.mp4" type="video/mp4"/>
+            </video>
+          </li>
+          <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-5">
+              <source src="static/teaser/car_shadow.mp4" type="video/mp4"/>
+            </video>
+          </li>
+          <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-6">
+              <source src="static/teaser/drift_chicane.mp4" type="video/mp4"/>
+            </video>
+          </li>
+          <!-- <li class="glide__slide">
+            <video muted loop defaultMuted playsinline webkit-playsinline class="teaser-video-6">
+              <source src="static/teaser/flamingo.mp4" type="video/mp4"/>
+            </video>
+          </li> -->
+        </ul>
+      </div>
+
+      <div class="glide__arrows" data-glide-el="controls">
+        <span class="glide__arrow glide__arrow--left" data-glide-dir="<"><img src="static/images/arrow-left-circle-fill.svg"/></span>
+        <span class="glide__arrow glide__arrow--right" data-glide-dir=">"><img src="static/images/arrow-right-circle-fill.svg"/></span>
+      </div>
+      <div class="glide__bullets" data-glide-el="controls[nav]">
+        <span class="glide__bullet" data-glide-dir="=0"></span>
+        <span class="glide__bullet" data-glide-dir="=1"></span>
+        <span class="glide__bullet" data-glide-dir="=2"></span>
+        <span class="glide__bullet" data-glide-dir="=3"></span>
+        <span class="glide__bullet" data-glide-dir="=4"></span>
+        <span class="glide__bullet" data-glide-dir="=5"></span>
+        <!-- <span class="glide__bullet" data-glide-dir="=6"></span> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- End Glider -->
+
+<!-- Paper abstract -->
+<section class="section hero is-light">
+  <div class="container is-max-desktop">
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-four-fifths" style="width: 100%;">
+        <h2 class="title is-3 hr-lines">Abstract</h2>
+        <div class="content has-text-justified">
+          <p>
+            Despite the typical inversion-then-editing paradigm using
+            text-to-image (T2I) models has demonstrated promising results,
+            directly extending it to text-to-video (T2V) models still 
+            suffers severe artifacts such as color flickering and content 
+            distortion. Consequently, current video editing methods 
+            primarily rely on T2I models, which inherently lack 
+            temporal-coherence generative ability, often resulting in inferior 
+            editing results. In this paper, we attribute the failure of the typical editing paradigm to: 
+            1) Tightly Spatialtemporal Coupling. The vanilla pivotal-based inversion 
+            strategy struggles to disentangle spatial-temporal information
+            in the video diffusion model; 
+            2) Complicated Spatialtemporal Layout. The vanilla cross-attention control is deficient
+            in preserving the unedited content. To address these
+            limitations, we propose a spatial-temporal decoupled guidance
+            (STDG) and multi-frame null-text optimization strategy
+            to provide pivotal temporal cues for more precise pivotal
+            inversion. Furthermore, we introduce a self-attention
+            control strategy to maintain higher fidelity for precise partial content editing. 
+            Experimental results demonstrate that our method (termed VideoDirector) effectively harnesses
+            the powerful temporal generation capabilities of T2V models,
+            producing edited videos with state-of-the-art performance
+            in accuracy, motion smoothness, realism, and fidelity
+            to unedited content.
+            .
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper abstract -->
+
+<!-- Paper motivation -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3 hr-lines">Motivation</h2>
+          <!-- Images and captions -->
+          <div class="columns is-centered" style="gap: 30px;"> <!-- 调整 gap 值 -->
+            <!-- First Image with Caption -->
+            <div class="column" style="text-align: left;">
+              <figure style="text-align: left;">
+                <img src="static/images/2_motivation_v0.10(a).jpg" alt="Model Overview 1" style="max-width: 100%; height: auto;">
+                <figcaption style="margin-top: 10px; font-size: 14px; color: #555; text-align: left;">
+                  (a) The prompt-to-prompt and null-text optimization are integrated 
+                  directly into the T2V generation model to reconstruct the input videos.
+                  The results present challenges for the typical editing paradigm in 
+                  accurately reconstructing the original videos.
+
+                </figcaption>
+              </figure>
+            </div>
+            <!-- Second Image with Caption -->
+            <div class="column" style="text-align: left;">
+              <figure style="text-align: left;">
+                <img src="static/images/2_motivation_v0.10(b).jpg" alt="Model Overview 2" style="max-width: 100%; height: auto;">
+                <figcaption style="margin-top: 10px; font-size: 14px; color: #555; text-align: left;">
+                  (b) Our method achieves accurate reconstruction of input videos by incorporating multi-frame Null-text 
+                  optimization and spatial-temporal decoupled guidance.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <!-- General description -->
+          <div style="margin-top: 20px; text-align: left;">
+            <p style="font-size: 16px; color: #333;">
+              Figure 1. <strong><em>Principle visualization of our approach.</em></strong> Comparison of diffusion pivotal inversion using a T2V generation model 
+              integrated with vanilla null-text optimization (a) and our proposed guidance (b). Our approach constrains the reverse diffusion trajectory
+              during video generation to align with DDIM inversion, enabling precise reconstruction of the input video.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper motivation -->
+
+<!-- Paper motivation -->
+<section class="hero is-small">
+  <div class="hero-body">
+    <div class="container is-max-desktop">
+      <div class="columns is-centered has-text-centered">
+        <div class="column">
+          <h2 class="title is-3 hr-lines">Method</h2>
+          <!-- Images and captions -->
+          <div class="columns is-centered" style="gap: 5px; align-items: center;"> 
+            <!-- First Image with Caption -->
+            <div class="column is-8" style="text-align: left; display: flex; flex-direction: column; justify-content: center;"> <!-- 居中 -->
+              <figure style="text-align: left;">
+                <img src="static/images/3_optimize_pipeline_v0.9.jpg" 
+                     alt="Model Overview 1" 
+                     style="width: 100%; height: auto; object-fit: contain;">
+                <figcaption style="margin-top: 10px; font-size: 14px; color: #555; text-align: left;">
+                  <strong>(a). <em>Video pivotal inversion pipeline</em></strong>. 
+                  Our pipeline comprises two key components: multi-frame null-text optimization and 
+                  spatialtemporal decoupled guidance, which are integrated into the standard pivotal inversion pipeline.
+                </figcaption>
+              </figure>
+            </div>
+            <!-- Second Image with Caption -->
+            <div class="column is-4" style="text-align: left; display: flex; flex-direction: column; justify-content: center;"> <!-- 居中 -->
+              <figure style="text-align: left;">
+                <img src="static/images/4_editing_pipeline_v0.9.jpg" 
+                     alt="Model Overview 2" 
+                     style="width: 100%; height: auto; object-fit: contain;">
+                <figcaption style="margin-top: 10px; font-size: 14px; color: #555; text-align: left;">
+                  <strong>(b). <em>Our video editing pipeline</em></strong>. 
+                  The SA-I and SA-II maintain the complicated spatial-temporal layout and enhance fidelity,
+                  while the cross-attention control introduces editing guidance based
+                  on the editing prompts.
+                </figcaption>
+              </figure>
+            </div>
+          </div>
+          <!-- General description -->
+          <div style="margin-top: 20px; text-align: left;">
+            <p style="font-size: 16px; color: #333;">
+              Figure 2. <strong><em>The two stages in our VideoDirector.</em></strong> 
+              Video Pivotal Inversion in <strong>(a)</strong>; 
+              Attention Control for Video Editing in <strong>(b)</strong>.
+              
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- End paper motivation -->
+
+
 <!-- Main Videos-->
 <section class="hero is-light">
   <div class="hero-body">
     <div class="container is-max-desktop">
       <div class="columns is-centered has-text-centered">
         <div class="column is-">
-          <h2 class="title is-3 hr-lines"> Editing Results </h2>
+          <h2 class="title is-3 hr-lines"> More Editing Results </h2>
           <div style="display: flex;">
             <div class="column">
               <!-- <video preload="auto"poster="" id="video11" autoplay controls muted loop width="90%">  -->
@@ -435,7 +759,7 @@
                 type="video/mp4">
               </video> 
 
-              <div style="display: flex;margin-top: 1rem">
+              <div style="display: flex;margin-top: 1rem; width: 75%; max-width: 75vw; margin: auto">
                 <div class="column">
                   <p class="prompt-input"> Input Video </p>
                 </div>
@@ -443,15 +767,12 @@
                   <p class="prompt"> "A blue flamingo" </p>
                 </div>
                 <div class="column">
-                  <p class="prompt"> "A green flamingo" </p>
-                </div>
-                <div class="column">
                   <p class="prompt"> "An orange flamingo" </p>
                 </div>
               </div>
-              <video preload="auto"poster="" id="video11" autoplay controls muted loop width="100%"> 
+              <video preload="auto"poster="" id="video11" autoplay controls muted loop width="75%"> 
                 <!-- Your video preload="auto"file here -->
-                <source src="supp\final_video\flamingo_v6.mp4"
+                <source src="supp\final_video\flamingo_v3_1.mp4"
                 type="video/mp4">
               </video> 
 
@@ -586,6 +907,23 @@
   </div>
 </section>
 
+<!--BibTex citation -->
+<section class="section" id="BibTeX">
+  <div class="container is-max-desktop content">
+    <h2 class="title">BibTeX</h2>
+    <pre><code>@misc{wang2024videodirectorprecisevideoediting,
+      title={VideoDirector: Precise Video Editing via Text-to-Video Models}, 
+      author={Yukun Wang and Longguang Wang and Zhiyuan Ma and Qibin Hu and Kai Xu and Yulan Guo},
+      year={2024},
+      eprint={2411.17592},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2411.17592}, 
+}</code></pre>
+  </div>
+</section>
+<!--End BibTex citation -->
+
 <section class="hero is-small">
   <div class="hero-body">
     <div class="container is-max-desktop">
@@ -706,7 +1044,7 @@
       autoplay: 17500,
       hoverpause: true
     }).mount();
-    let video_num = 4;
+    let video_num = 6;
     glide.on('run', () => {
       var index = glide.index;
       for(var i = 0; i < video_num; i++) {
